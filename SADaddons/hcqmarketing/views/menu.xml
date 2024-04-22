@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+#menuheader @ top
+    <menuitem
+     id="hcq_root_menu"
+     name=" HCQ Marketing"
+    sequence="0" />
+
+    <menuitem
+     id="hcq_inventory_menu"
+     name=" Inventory"
+     parent="hcq_root_menu"
+    sequence="0" />
+
+
+
+</odoo>
