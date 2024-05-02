@@ -6,7 +6,11 @@ class Item(models.Model):
     
     #fieldnames
     name = fields.Char(string='Item Name')
-    description = fields.Char(string=' Item Description')
-    size= fields.Integer(string='Size')
-    price= fields.Integer(string='Price')
-    color = fields.Char(string='Color')
+    code =fields.Char(string='Item Code')
+    category_id= fields.Many2one('hcqinventory.category', string="Category")
+    brand_id= fields.Many2one('hcqinventory.brand', string="Brand")
+    price1= fields.Float(string='Price A')
+    price2= fields.Float(string='Price B')
+    price3= fields.Float(string='Price C')
+    price4= fields.Float(string='Price D')
+    quantity=fields.Integer(string="Quantity")

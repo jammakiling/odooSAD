@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+      <record id="view_hcqcustomer_tree" model="ir.ui.view">
+        <field name="name">hcqinventory.customer.tree</field>
+        <field name="model">hcqinventory.customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                        <field name="name"/>
+                        <field name="address"/>
+                        <field name="contactname"/>
+                       <field name="owner"/>
+                       <field name="contact1"/>
+                       <field name="contact2"/>
+                       <field name="contact3"/>
+                        <field name="TIN"/>
+            </tree>
+        </field>
+    </record>
+
+     <record id="view_hcqcustomer_form" model="ir.ui.view">
+        <field name="name">hcqinventory.customer.form</field>
+        <field name="model">hcqinventory.customer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                     <group>
+                         <field name="name"/>
+                        <field name="address"/>
+                        <field name="contactname"/>
+                       <field name="owner"/>
+                       <field name="contact1"/>
+                       <field name="contact2"/>
+                       <field name="contact3"/>
+                        <field name="TIN"/>
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hcq_customer" model="ir.actions.act_window">
+        <field name ="name">Customers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hcqinventory.customer</field>
+        <field name="view_mode">tree,form</field>
+         <field name="context">{}</field>
+          <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                Input your first customer!
+                </p>
+        </field>
+    </record>
+    <menuitem
+     id="hcq_customer_menu"
+     name="Customers"
+     action="action_hcq_customer"
+     parent="hcq_sales_menu"
+     sequence="0" />
+</odoo>

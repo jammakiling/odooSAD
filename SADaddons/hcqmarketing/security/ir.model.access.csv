@@ -1,2 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.hcqinventory.item,access_hcqinventory_item,hcqmarketing.model_hcqinventory_item,base.group_user,1,1,1,1
+access.hcqinventory.category,access_hcqinventory_category,hcqmarketing.model_hcqinventory_category,base.group_user,1,1,1,1
+access.hcqinventory.brand,access_hcqinventory_brand,hcqmarketing.model_hcqinventory_brand,base.group_user,1,1,1,1
+access.hcqinventory.customer,access_hcqinventory_customer,hcqmarketing.model_hcqinventory_customer,base.group_user,1,1,1,1
+access.hcqinventory.sale,access_hcqinventory_sale,hcqmarketing.model_hcqinventory_sale,base.group_user,1,1,1,1
+access.hcqinventory.saleorder,access_hcqinventory_saleorder,hcqmarketing.model_hcqinventory_saleorder,base.group_user,1,1,1,1

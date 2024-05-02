@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import item
+from . import item,category,brand,customer,sale

@@ -13,7 +13,11 @@
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
-        'views/item.xml',  
+        'views/item.xml',
+        'views/category.xml', 
+        'views/brand.xml',   
+        'views/customer.xml',  
+        'views/sale.xml', 
         ],
     'demo': [],
     'installable': True,
